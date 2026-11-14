@@ -30,5 +30,5 @@ jobs:
             const next = `${base}/issues?q=is%3Aissue+is%3Aopen+label%3A%22help+wanted%22`;
             await github.rest.issues.createComment({
               owner, repo, issue_number: pr.number,
-              body: `Merged. Thank you, @${author}, and welcome to the contributors of ${repo}!\n\nIf you'd like to keep going, there are more [open issues that need help](${next}); comment \`/take\` on one to claim it. Telling a friend or starring the repo helps new people find the project. Add yourself to [AUTHORS.md](${base}/blob/main/AUTHORS.md) in your next PR if you like.`,
+              body: `Merged. Thank you, @${author}, and welcome to the contributors of ${repo}!\n\nIf you'd like to keep going, there are more [open issues that need help](${next}); comment \`/take\` on one to claim it. Add yourself to [AUTHORS.md](${base}/blob/main/AUTHORS.md) in your next PR if you like.\n\n⭐ **If you enjoyed contributing, please drop a Star on [${owner}/${repo}](${base})** — it helps new contributors find the project!`,
             });

@@ -77,4 +77,4 @@ jobs:
               await say(`Thanks, @${user}! GitHub would not let me assign this to you automatically; a maintainer will do it. Feel free to start meanwhile.`);
               return;
             }
-            await say(`Assigned to you, @${user}. Have fun! The [Contributor Guide](https://github.com/${owner}/${repo}/blob/main/docs/CONTRIBUTOR_GUIDE.md) has the setup steps. If you get stuck, ask here. If you cannot finish, just comment \`/release\` so someone else can pick it up. Inactive claims are released automatically after about three weeks.`);
+            await say(`Assigned to you, @${user}. Have fun! The [Contributor Guide](https://github.com/${owner}/${repo}/blob/main/docs/CONTRIBUTOR_GUIDE.md) has the setup steps. If you get stuck, ask here. If you cannot finish, just comment \`/release\` so someone else can pick it up. Inactive claims are released automatically after about three weeks.\n\n⭐ **Tip:** Consider dropping a **Star** on [alok-108/phantom](https://github.com/${owner}/${repo}) (top right) to bookmark the repo while you work on this issue!`);
